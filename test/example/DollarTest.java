@@ -22,7 +22,7 @@ public class DollarTest {
     @Test
     public void testEquality() {
         assertTrue(Money.dollar(5).equals(Money.dollar(5)));
-        assertFalse(new Dollar(5).equals(new Dollar(6)));
+        assertFalse(Money.dollar(5).equals(Money.dollar(6)));
     }
 
     @After
