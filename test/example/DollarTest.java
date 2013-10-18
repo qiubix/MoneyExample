@@ -2,6 +2,8 @@ package example;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class DollarTest {
@@ -10,6 +12,7 @@ public class DollarTest {
 
     }
 
+    @Test
     public void testMultiplication() {
         Dollar five = new Dollar(5);
         five.times(2);
