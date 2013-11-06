@@ -22,7 +22,7 @@ class Money implements Expression{
         return new Money(multiplier * amount, currency);
     }
 
-    Expression plus(Expression addend) {
+    public Expression plus(Expression addend) {
         return new Sum(this, addend);
     }
 
