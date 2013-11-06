@@ -18,11 +18,11 @@ class Money implements Expression{
         return amount == money.amount && currency().equals(money.currency());
     }
 
-    Money times(int multiplier) {
+    Expression times(int multiplier) {
         return new Money(multiplier * amount, currency);
     }
 
-    Expression plus(Money addend) {
+    Expression plus(Expression addend) {
         return new Sum(this, addend);
     }
 
